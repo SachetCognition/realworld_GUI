@@ -10,19 +10,19 @@ The `<head>` element includes all the metadata for a page, including the title, 
 <head>
   <meta charset="utf-8" />
   <title>Conduit</title>
-  <!-- Import Ionicon icons & Google Fonts our Bootstrap theme relies on -->
+  <!-- Import Ionicon icons & Google Fonts our corporate theme relies on -->
   <link
     href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
     rel="stylesheet"
     type="text/css"
   />
   <link
-    href="//fonts.googleapis.com/css?family=Titillium+Web:700|Source+Serif+Pro:400,700|Merriweather+Sans:400,700|Source+Sans+Pro:400,300,600,700,300italic,400italic,600italic,700italic"
+    href="//fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Titillium+Web:wght@700&family=Source+Serif+Pro:wght@400;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
     rel="stylesheet"
     type="text/css"
   />
-  <!-- Import the custom Bootstrap 4 theme from our hosted CDN -->
-  <link rel="stylesheet" href="//demo.productionready.io/main.css" />
+  <!-- Import the Conduit Corporate Theme - a modern, formal color palette -->
+  <link rel="stylesheet" href="/conduit-corporate-theme.css" />
 </head>
 ```
 
