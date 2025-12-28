@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Conduit Theme Preview - BEFORE (Original Bootstrap 4)</title>
+  <!-- Import Ionicon icons & Google Fonts our Bootstrap theme relies on -->
+  <link
+    href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="//fonts.googleapis.com/css?family=Titillium+Web:700|Source+Serif+Pro:400,700|Merriweather+Sans:400,700|Source+Sans+Pro:400,300,600,700,300italic,400italic,600italic,700italic"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <!-- Import the ORIGINAL Bootstrap 4 theme from the CDN -->
+  <link rel="stylesheet" href="//demo.productionready.io/main.css" />
+  <style>
+    .preview-section {
+      padding: 2rem 0;
+      border-bottom: 2px solid #dee2e6;
+    }
+    .preview-section:last-child {
+      border-bottom: none;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #5CB85C;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #5CB85C;
+    }
+    .component-group {
+      margin-bottom: 2rem;
+    }
+    .component-label {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #6c757d;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Header -->
+  <nav class="navbar navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="/">conduit</a>
+      <ul class="nav navbar-nav pull-xs-right">
+        <li class="nav-item">
+          <a class="nav-link active" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/editor"> <i class="ion-compose"></i>&nbsp;New Article </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/settings"> <i class="ion-gear-a"></i>&nbsp;Settings </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/profile/demo-user">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=demo" class="user-pic" />
+            Demo User
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Page Banner -->
+  <div class="banner">
+    <div class="container">
+      <h1 class="logo-font">conduit</h1>
+      <p>A place to share your knowledge.</p>
+    </div>
+  </div>
+
+  <div class="container page">
+    <!-- Color Palette Section -->
+    <div class="preview-section">
+      <h2 class="section-title">Original Bootstrap 4 Theme</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <p>This page demonstrates the ORIGINAL Bootstrap 4 theme from <code>//demo.productionready.io/main.css</code></p>
+          <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+            <div style="text-align: center;">
+              <div style="width: 80px; height: 80px; background: #5CB85C; border-radius: 8px; margin-bottom: 0.5rem;"></div>
+              <small>Primary Green<br/>#5CB85C</small>
+            </div>
+            <div style="text-align: center;">
+              <div style="width: 80px; height: 80px; background: #373a3c; border-radius: 8px; margin-bottom: 0.5rem;"></div>
+              <small>Dark<br/>#373a3c</small>
+            </div>
+            <div style="text-align: center;">
+              <div style="width: 80px; height: 80px; background: #818a91; border-radius: 8px; margin-bottom: 0.5rem;"></div>
+              <small>Secondary<br/>#818a91</small>
+            </div>
+            <div style="text-align: center;">
+              <div style="width: 80px; height: 80px; background: #B85C5C; border-radius: 8px; margin-bottom: 0.5rem;"></div>
+              <small>Danger<br/>#B85C5C</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Buttons Section -->
+    <div class="preview-section">
+      <h2 class="section-title">Buttons</h2>
+      <div class="component-group">
+        <div class="component-label">Primary Buttons</div>
+        <button class="btn btn-primary btn-lg">Large Primary</button>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-primary btn-sm">Small Primary</button>
+      </div>
+      <div class="component-group">
+        <div class="component-label">Outline Buttons</div>
+        <button class="btn btn-outline-primary">Outline Primary</button>
+        <button class="btn btn-outline-secondary">Outline Secondary</button>
+        <button class="btn btn-outline-danger">Outline Danger</button>
+      </div>
+      <div class="component-group">
+        <div class="component-label">Action Buttons (as used in articles)</div>
+        <button class="btn btn-sm btn-outline-secondary">
+          <i class="ion-plus-round"></i>&nbsp; Follow User
+        </button>
+        <button class="btn btn-sm btn-outline-primary">
+          <i class="ion-heart"></i>&nbsp; Favorite Post <span class="counter">(29)</span>
+        </button>
+        <button class="btn btn-sm btn-outline-secondary">
+          <i class="ion-edit"></i> Edit Article
+        </button>
+        <button class="btn btn-sm btn-outline-danger">
+          <i class="ion-trash-a"></i> Delete Article
+        </button>
+      </div>
+    </div>
+
+    <!-- Tags Section -->
+    <div class="preview-section">
+      <h2 class="section-title">Tags</h2>
+      <div class="component-group">
+        <div class="component-label">Sidebar Tags (Popular Tags)</div>
+        <div class="sidebar" style="max-width: 300px;">
+          <p>Popular Tags</p>
+          <div class="tag-list">
+            <a href="#" class="tag-pill tag-default">programming</a>
+            <a href="#" class="tag-pill tag-default">javascript</a>
+            <a href="#" class="tag-pill tag-default">react</a>
+            <a href="#" class="tag-pill tag-default">node</a>
+            <a href="#" class="tag-pill tag-default">rails</a>
+          </div>
+        </div>
+      </div>
+      <div class="component-group">
+        <div class="component-label">Article Tags (Outline Style)</div>
+        <ul class="tag-list">
+          <li class="tag-default tag-pill tag-outline">realworld</li>
+          <li class="tag-default tag-pill tag-outline">implementations</li>
+          <li class="tag-default tag-pill tag-outline">tutorial</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Forms Section -->
+    <div class="preview-section">
+      <h2 class="section-title">Forms</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="component-label">Login Form</div>
+          <form>
+            <fieldset class="form-group">
+              <input class="form-control form-control-lg" type="text" placeholder="Email" />
+            </fieldset>
+            <fieldset class="form-group">
+              <input class="form-control form-control-lg" type="password" placeholder="Password" />
+            </fieldset>
+            <button class="btn btn-lg btn-primary pull-xs-right">Sign in</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div class="component-label">Settings Form</div>
+          <form>
+            <fieldset class="form-group">
+              <input class="form-control" type="text" placeholder="URL of profile picture" />
+            </fieldset>
+            <fieldset class="form-group">
+              <input class="form-control form-control-lg" type="text" placeholder="Your Name" />
+            </fieldset>
+            <fieldset class="form-group">
+              <textarea class="form-control form-control-lg" rows="4" placeholder="Short bio about you"></textarea>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Article Preview Section -->
+    <div class="preview-section">
+      <h2 class="section-title">Article Preview</h2>
+      <div class="row">
+        <div class="col-md-9">
+          <div class="feed-toggle">
+            <ul class="nav nav-pills outline-active">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Your Feed</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Global Feed</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="article-preview">
+            <div class="article-meta">
+              <a href="#"><img src="https://api.dicebear.com/7.x/avataaars/svg?seed=eric" /></a>
+              <div class="info">
+                <a href="#" class="author">Eric Simons</a>
+                <span class="date">January 20th</span>
+              </div>
+              <button class="btn btn-outline-primary btn-sm pull-xs-right">
+                <i class="ion-heart"></i> 29
+              </button>
+            </div>
+            <a href="#" class="preview-link">
+              <h1>How to build webapps that scale</h1>
+              <p>This is the description for the post.</p>
+              <span>Read more...</span>
+              <ul class="tag-list">
+                <li class="tag-default tag-pill tag-outline">realworld</li>
+                <li class="tag-default tag-pill tag-outline">implementations</li>
+              </ul>
+            </a>
+          </div>
+
+          <div class="article-preview">
+            <div class="article-meta">
+              <a href="#"><img src="https://api.dicebear.com/7.x/avataaars/svg?seed=albert" /></a>
+              <div class="info">
+                <a href="#" class="author">Albert Pai</a>
+                <span class="date">January 20th</span>
+              </div>
+              <button class="btn btn-outline-primary btn-sm pull-xs-right">
+                <i class="ion-heart"></i> 32
+              </button>
+            </div>
+            <a href="#" class="preview-link">
+              <h1>The song you won't ever stop singing</h1>
+              <p>No matter how hard you try, this melody stays with you.</p>
+              <span>Read more...</span>
+              <ul class="tag-list">
+                <li class="tag-default tag-pill tag-outline">music</li>
+                <li class="tag-default tag-pill tag-outline">life</li>
+              </ul>
+            </a>
+          </div>
+
+          <ul class="pagination">
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards & Comments Section -->
+    <div class="preview-section">
+      <h2 class="section-title">Cards & Comments</h2>
+      <div class="row">
+        <div class="col-md-8">
+          <form class="card comment-form">
+            <div class="card-block">
+              <textarea class="form-control" placeholder="Write a comment..." rows="3"></textarea>
+            </div>
+            <div class="card-footer">
+              <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=demo" class="comment-author-img" />
+              <button class="btn btn-sm btn-primary">Post Comment</button>
+            </div>
+          </form>
+
+          <div class="card">
+            <div class="card-block">
+              <p class="card-text">
+                This is a great article! I learned so much about building scalable web applications. The original green theme is classic.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="comment-author">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=jacob" class="comment-author-img" />
+              </a>
+              &nbsp;
+              <a href="#" class="comment-author">Jacob Schmidt</a>
+              <span class="date-posted">Dec 29th</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-block">
+              <p class="card-text">
+                The green color scheme has been the signature look of Conduit for years!
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="comment-author">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=sarah" class="comment-author-img" />
+              </a>
+              &nbsp;
+              <a href="#" class="comment-author">Sarah Johnson</a>
+              <span class="date-posted">Dec 28th</span>
+              <span class="mod-options">
+                <i class="ion-trash-a"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Profile Section -->
+    <div class="preview-section">
+      <h2 class="section-title">Profile Page</h2>
+      <div class="profile-page">
+        <div class="user-info" style="margin: -1rem -15px 2rem; padding: 2rem;">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-md-10 offset-md-1">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=profile" class="user-img" />
+                <h4>Demo User</h4>
+                <p>
+                  Software developer passionate about building great user experiences. 
+                  Loves clean code and modern design.
+                </p>
+                <button class="btn btn-sm btn-outline-secondary action-btn">
+                  <i class="ion-plus-round"></i>
+                  &nbsp; Follow Demo User
+                </button>
+                <button class="btn btn-sm btn-outline-secondary action-btn">
+                  <i class="ion-gear-a"></i>
+                  &nbsp; Edit Profile Settings
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="articles-toggle">
+          <ul class="nav nav-pills outline-active">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">My Articles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Favorited Articles</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Error Messages Section -->
+    <div class="preview-section">
+      <h2 class="section-title">Error Messages</h2>
+      <ul class="error-messages">
+        <li>That email is already taken</li>
+        <li>Password must be at least 8 characters</li>
+        <li>Username is required</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <a href="/" class="logo-font">conduit</a>
+      <span class="attribution">
+        An interactive learning project from <a href="https://thinkster.io">Thinkster</a>. Code &amp;
+        design licensed under MIT.
+      </span>
+    </div>
+  </footer>
+</body>
+</html>
